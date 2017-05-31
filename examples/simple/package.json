@@ -1,0 +1,29 @@
+{
+  "name": "turbine-angular-example-simple",
+  "version": "0.0.1",
+  "description": "A simple example showing how turbine-angular works",
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback --inline --progress"
+  },
+  "author": "Funkia",
+  "license": "MIT",
+  "dependencies": {
+    "@funkia/hareactive": "0.0.31",
+    "@funkia/jabz": "0.0.19",
+    "@funkia/turbine": "^0.0.13",
+    "angular": "^1.5.0",
+    "babel-polyfill": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-regenerator": "^6.24.1",
+    "babel-preset-es2015": "^6.1.18",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.7.1",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
+  }
+}

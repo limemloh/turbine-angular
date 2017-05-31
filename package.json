@@ -1,0 +1,26 @@
+{
+  "name": "turbine-angular",
+  "version": "0.0.1",
+  "description": "Wrapper around Turbine components to use in AngularJS",
+  "main": "src/turbine-angular.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limemloh/turbine-angular.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limemloh/turbine-angular/issues"
+  },
+  "homepage": "https://github.com/limemloh/turbine-angular#readme",
+  "dependencies": {
+    "@funkia/hareactive": "^0.0.31",
+    "@funkia/turbine": "^0.0.13"
+  }
+}

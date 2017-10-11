@@ -1,7 +1,7 @@
 import angular from 'angular';
-import {turbineToAngular} from "./../../../../src/turbine-angular";
-import {turbineWorld} from "./turbine-world";
-import {AppCtrl, app} from "./angular-world";
+import { turbineToAngular } from "../../../../";
+import { turbineWorld } from "./turbine-world";
+import { AppCtrl, app } from "./angular-world";
 
 const MODULE_NAME = 'app';
 
@@ -13,6 +13,6 @@ angular.module(MODULE_NAME, [])
   .controller('AppCtrl', AppCtrl)
 
   // Turbine World
-  .directive("simple", turbineToAngular({name: "@name"}, turbineWorld, ["serviceExample"]));
+  .directive("simple", turbineToAngular({ name: "@name" }, turbineWorld, ["serviceExample"]));
 
 export default MODULE_NAME;

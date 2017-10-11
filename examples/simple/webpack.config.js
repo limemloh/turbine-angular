@@ -16,14 +16,10 @@ module.exports = function () {
       chunkFilename: '[name].bundle.js'
     },
     module: {
-      rules: [{
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      }, {
-        test: /\.html$/,
-        loader: 'raw-loader'
-      }]
+      rules: [
+        {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/}, 
+        {test: /\.html$/, loader: 'raw-loader'}
+      ]
     },
     plugins: [
       new HtmlWebpackPlugin({

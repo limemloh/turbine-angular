@@ -2,11 +2,17 @@
   "name": "turbine-angular",
   "version": "0.0.1",
   "description": "Wrapper around Turbine components to use in AngularJS",
-  "main": "src/turbine-angular.js",
+  "main": "dist/cm/index.js",
+  "types": "dist/es/index.d.ts",
+  "module": "dist/es/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run build-cm; npm run build-es",
+    "build-cm": "tsc --outDir 'dist/es' --module es6",
+    "build-es": "tsc --outDir 'dist/cm' --module commonjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,8 +25,13 @@
     "url": "https://github.com/limemloh/turbine-angular/issues"
   },
   "homepage": "https://github.com/limemloh/turbine-angular#readme",
-  "dependencies": {
-    "@funkia/hareactive": "^0.0.31",
-    "@funkia/turbine": "^0.0.13"
-  }
+  "peerDependencies": {
+    "@funkia/hareactive": "^0.1.1",
+    "@funkia/turbine": "^0.1.0"
+  },
+  "devDependencies": {
+    "@funkia/hareactive": "^0.1.1",
+    "@funkia/turbine": "^0.1.0"
+  },
+  "dependencies": {}
 }
